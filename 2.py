@@ -33,28 +33,24 @@
 #[6, 5, 10] [1, 5, 9, 10] [9, 5, 1]
 
 if __name__ == '__main__':
-    #N = int(input())
     mainArr = []
-
-    strinput = input()
-    arrlist = strinput.split()
-
-    defineDigit = arrlist[0]
-    for seq in arrlist:
-
+    N = int(input())
+    for seq in range(N):
+        strinput = input()
+        arrlist = strinput.split()
+        defineDigit = arrlist[0]
         if defineDigit == 'insert':
-            mainArr.insert(int(arrlist[1]), arrlist[2])
-            break
+            mainArr.insert(int(arrlist[1]), int(arrlist[2]))
         elif defineDigit == 'remove':
-            mainArr.remove(arrlist[1])
-            break
+            mainArr.remove(int(arrlist[1]))
         elif defineDigit == 'append':
-            mainArr.append(arrlist[1])
+            mainArr.append(int(arrlist[1]))
         elif defineDigit == 'pop':
             mainArr.pop()
         elif defineDigit == 'sort':
             mainArr.sort()
         elif defineDigit == 'reverse':
             mainArr.reverse()
+        elif defineDigit == 'print':
+            print(mainArr)
 
-    print(mainArr)
