@@ -1,6 +1,8 @@
 # Practise > Python > Basic data types > nested lists
 # https://www.hackerrank.com/challenges/nested-list/problem
 
+# Only 8/10 test cases passed
+# Error proving 25.000 > 25.0
 
 mainList = []
 totNum = int(input())   # Number of members
