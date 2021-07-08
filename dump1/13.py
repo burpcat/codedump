@@ -3,23 +3,6 @@
 
 if __name__ == '__main__':
     s = input()
+    print(f'{any(map(str.isalnum,s))}\n{any(map(str.isalpha,s))}\n{any(map(str.isdigit,s))}\n{any(map(str.islower,s))}\n{any(map(str.isupper,s))}\n')
 
-    list1 = ['True', 'True', 'True', 'True', 'True'] 
-
-    if not s.isalnum():    # if the result is not true, then the condition is executed
-        list1[0] = False
-
-    if not s.isalpha():
-        list1[1] = False
-
-    if not s.isdigit():
-        list1[2] = False
-
-    if not s.islower():
-        list1[3] = False
-
-    if not s.isupper():
-        list1[4] = False
-
-    for result in list1:
-        print(result)
+    # any() function returns true even if one functin is true in the list or dictionaru
